@@ -1,0 +1,21 @@
+{
+  "name": "with-static-export",
+  "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "axios": "^0.21.1",
+    "next": "latest",
+    "next-pwa": "^5.0.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "serve": "^11.3.2"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "preexport": "npm run build",
+    "export": "next export",
+    "prestart": "npm run export",
+    "start": "serve out"
+  },
+  "license": "MIT"
+}
